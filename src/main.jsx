@@ -7,6 +7,8 @@ import CompanyForm from "./components/form.jsx";
 import Company from "./components/Company.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Companies from "./components/Companies.jsx";
+import ViewCompany from "./components/ViewCompany.jsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/companies",
     element: <Companies />,
+  },
+  {
+    path: "/company/:id",
+    element: <ViewCompany />,
   },
 ]);
 

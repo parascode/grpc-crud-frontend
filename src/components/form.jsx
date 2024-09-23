@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import { Button, Grid2 } from "@mui/material";
+import { Button, Grid2, Typography } from "@mui/material";
 import axios from "axios";
 // import { QueryClient } from "@tanstack/react-query";
 
@@ -71,8 +71,10 @@ export default function CompanyForm() {
       onSubmit={handleSubmit}
     >
       <Grid2 container spacing={2} columns={30} direction={"row"}>
-        <Grid2>
-          <h1>Enter company details...</h1>
+        <Grid2 size={30}>
+          <Typography sx={{ color: "black", textJustify: "inherit" }}>
+            <h1>Enter company details...</h1>
+          </Typography>
         </Grid2>
         <Grid2 size={30}>
           <TextField
